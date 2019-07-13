@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style type="text/css">
+        h1{
+            color: red;
+            text-align: center;
+        }
+        h2{color: seagreen !important;}
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 12;
+        }
+        
+        #homeBanking label{font-weight: bold;}
+        #homeBanking input{
+            width: 300px;
+            margin-top: 5px;
+        }
+        #homeBanking button{
+            background-color: green;
+            color: white;
+        }
+        #bancaPersonal p{
+            font-style: italic;
+        }
+        footer{
+            padding: 10px;
+            background-color: #F39537;
+            border: 3px solid black;
+        }
+        /* body{background-image: url('https://hb.hipotecario.com.ar/hb/imagen-fondo-HB-1280x1080.1a0dd42788e0eb3b408b.jpg')} */
+        </style>
+    <title>Banco Hipotecario</title>
+</head>
+<body>
+    <header>
+        <h1>Banco Hipotecario</h1>
+        <hr/>
+        <nav>
+            <ul>
+                <li>
+                    <!--<a href="https://hb.hipotecario.com.ar/hb/#/" target="_blank">HOME BANKING</a>-->
+                    <a href="#homeBanking">HOME BANKING</a>
+                </li>
+                <li><a href="#servicios">SERVICIOS</a></li>
+                <li><a href="#bancaPersonal">BANCA PERSONAL</a></li>
+                <li>BANCA EMPRESAS</li>
+                <li>INSTITUCIONAL</li>
+                <li>INVERSORES</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="imagenes">
+            <img src="https://www.hipotecario.com.ar/media/Slide-Turnos-Online-ok.png" alt="Turnos Online" title="Turnos Online">
+        </section>
+        <section id="homeBanking" style="text-align: center">
+            <form action="IndexBH.html">
+                <label for="Documento">Documento</label>
+                <br/>
+                <input type="number" name="Documento" name="Documento" maxlength="8" max="99999999" min="0" placeholder="Ingrese su numero de documento" required/>
+                <br/>
+                <label for="Usuario">Usuario</label>
+                <br/>
+                <input type="password" name="Usuario" id="Usuario" maxlength="20" placeholder="Usuario" required/>
+                <br/>
+                <label for="Clave">Clave</label>
+                <br/>
+                <input type="password" name="Clave" id="Clave" maxlength="15" placeholder="Clave Búho Fácil" required/>
+                <br/>
+                <label for="recordarDocumento">Recordar mi documento</label>
+                <input type="checkbox" name="recordarDocumento" id="recordarDocumento"/>
+                <br/>
+                <button type="submit">INGRESAR</button>
+            </form>
+        </section>
+        <!-- <section id="controlesExtras">
+            <input pattern="[A-Za-z]{3}">
+            <input type="range" name="points" min="1" max="10">
+            <progress value="0" max="100" id="progressBar"></progress>
+        </section> -->
+        <section id="servicios">
+            <h2 style="color: blue">Servicios</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Prestamos</th>
+                        <th>Promociones</th>
+                        <th>Buho Bank</th>
+                        <th>Plan Sueldo</th>
+                        <th>Pyme</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Calcula la cuota de tu prestamo</td>
+                        <td>Conocé y disfrutá de los beneficios de comprar con Búho Crédito y Búho Débito</td>
+                        <td>Pedí ahora tu Tarjeta de Crédito on line</td>
+                        <td>Beneficios exclusivos por acreditar tu sueldo</td>
+                        <td>Productos y servicios para todo el país</td>
+                    </tr>
+                    <tr>
+                        <td>Conocé y disfrutá de los beneficios de comprar con Búho Crédito y Búho Débito</td>
+                        <td>Pedí ahora tu Tarjeta de Crédito on line</td>
+                        <td colspan="2">Beneficios exclusivos por acreditar tu sueldo</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="bancaPersonal">
+            <h2>BANCA PERSONAL</h2>
+            <h3>PROCREAR SOLUCIÓN PARA CASA PROPIA</h4>
+            <p>Comprá o construí tu Casa con el Crédito Hipotecarios dirigido a personas que resultan beneficiadas en el marco del Programa PROCREAR Solución Casa Propia. Esta línea de crédito combina un subsidio de capital no reembolsable, otorgado por el Estado Nacional, junto al ahorro de las familias y la financiación otorgada por el Banco, con el fin de facilitar el acceso a la vivienda en un esquema de cooperación entre el Estado y los bancos.</p>
+        </section>
+    </main>
+    <footer>
+        <p>Código de Prácticas Bancarias | Defensa del Consumidor | Términos y Condiciones | Protección de Datos Personales</p>
+    </footer>
+</body>
+</html>

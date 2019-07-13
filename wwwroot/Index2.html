@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <style type="text/css" >
+        p {
+            background-color: blue;
+            color: white;
+            padding: 5px
+        }
+
+        .parrafoImportante {
+            background-color: grey;
+            border: none !important;
+        }
+
+        #parrafoMasImportante {
+            background-color: red;
+            border: 3px solid black;
+        }
+        /*body{
+            background-image: url('https://hb.hipotecario.com.ar/hb/imagen-fondo-HB-1920x1080.cd338355df3635b0e7b3.jpg')
+        }*/
+    </style>
+    <title>Banco Hipotecario</title>
+</head>
+<body>
+    <header>
+        <h1>Banco Hipotecario</h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <ul class="navbar-nav">
+                <li class="nav-item active"><a class="nav-link" href="#HomeBanking">Home Banking</a></li>
+                <li class="nav-item active"><a class="nav-link" href="#BancaPersonal">Banca Personal</a></li>
+                <li class="nav-item active"><a class="nav-link" href="#BancaEmpresas">Banca Empresas</a></li>
+                <li class="nav-item active"><a class="nav-link" href="#html5">HTML5</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+    <main class="container">
+        <section id="inicio">
+            <img src="https://www.hipotecario.com.ar/media/Slide_eCheq-06-2019.png" alt="">
+            <table class="table">
+                <colgroup>
+                    <col span="2" style="background-color:red">
+                    <col style="background-color:yellow">
+                </colgroup>
+                <tr>
+                    <th>ISBN</th>
+                    <th>Title</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>3476896</td>
+                    <td>My first HTML</td>
+                    <td>$53</td>
+                </tr>
+                </table>
+        </section>
+        <section id="HomeBanking">
+            <h2>Home Banking</h2>
+            <form action="Index2.html">
+                <div class="row">
+                    <div class="col-12"><input name="Documento" type="number" class="form-control" placeholder="Documento" required /></div>
+                    <div class="col-12"><input name="Usuario" type="password" class="form-control" placeholder="Usuario" required></div>
+                    <div class="col-12"><input name="Clave" type="password" class="form-control" placeholder="Clave Búho Fácil" required></div>
+                </div>
+                <div class="row">
+                    <div class="col-6 text-center"><button type="button" class="btn btn-primary" onclick="ingresar();">Ingresar</button></div>
+                    <div class="col-6"><button type="submit" class="btn btn-success">Ingresar 2</button></div>
+                </div>
+            </form>
+        </section>
+        <section id="BancaPersonal">
+            <h2>Banca Personal</h2>
+            <p class="parrafoImportante">Esta sección está en desarrollo</p>
+            <p id="parrafoMasImportante">Esta sección está en desarrollo</p>
+        </section>
+        <section id="BancaEmpresas">
+            <h2>Banca Empresas</h2>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">PROMOS DEL MES</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text">Conocé y disfrutá de los beneficios de comprar con Búho Crédito y Búho Débito.</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+        </section>
+        <section id="html5">
+            <input list="Languages" /> 
+            <datalist id="Languages">
+                <option value="PHP">
+                <option value="ASP">
+                <option value="Python">
+                <option value="Ruby">
+                <option value="Java">
+            </datalist>
+            <article cont>
+                <h1>Tutorial of HTML5 article element</h1>
+                <p>HTML5 article element represents independent item like a blog entry in an web document.</p>
+            </article>
+            <details>
+                <summary>PHP is a server side scripting language</summary>
+                <p>PHP is a general-purpose server-side scripting language originally designed for web development to produce dynamic web 
+                pages. For this purpose, PHP code is embedded into the HTML source document and interpreted by a web server with a PHP 
+                processor module, which generates the web page document.</p>
+            </details>
+        </section>
+    </main>
+    <footer class="footer mt-auto py-3 navbar-light">
+        <div class="container">
+            <span class="text-muted">Place sticky footer content here.</span>
+        </div>
+    </footer>
+    <script>
+        function ingresar(){
+            if (document.getElementsByName('Documento').value != null && 
+            document.getElementsByName('Usuario').value != null &&
+            document.getElementsByName('Clave').value != null
+            )
+                alert("Ingresando al Home Banking");
+        }
+    </script>
+</body>
+</html>

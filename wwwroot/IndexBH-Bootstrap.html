@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>Banco Hipotecario - Bootstrap</title>
+</head>
+<body>
+    <header>
+        <h1>Banco Hipotecario</h1>
+        <hr/>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#homeBanking">HOME BANKING</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#servicios">SERVICIOS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#bancaPersonal">BANCA PERSONAL</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">BANCA EMPRESAS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">INSTITUCIONAL</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">INVERSORES</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section id="imagenes">
+            <img src="https://www.hipotecario.com.ar/media/Slide-Turnos-Online-ok.png" alt="Turnos Online" title="Turnos Online">
+        </section>
+        <section id="homeBanking">
+            <form action="IndexBH.html">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <label for="Documento">Documento</label>
+                        <input class="form-control" type="number" name="Documento" name="Documento" maxlength="8" max="99999999" min="0" placeholder="Ingrese su numero de documento" required/>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <label for="Usuario">Usuario</label>
+                        <input class="form-control" type="password" name="Usuario" id="Usuario" maxlength="20" placeholder="Usuario" required/>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <label for="Clave">Clave</label>
+                        <input class="form-control" type="password" name="Clave" id="Clave" maxlength="15" placeholder="Clave Búho Fácil" required/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <label for="recordarDocumento">Recordar mi documento</label>
+                        <input class="form-check" type="checkbox" name="recordarDocumento" id="recordarDocumento"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <button class="btn btn-outline-success" type="submit">INGRESAR</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <!-- <section id="controlesExtras">
+            <input pattern="[A-Za-z]{3}">
+            <input type="range" name="points" min="1" max="10">
+            <progress value="0" max="100" id="progressBar"></progress>
+        </section> -->
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <table class="table table-hover table-bordered">
+                <thead>
+                    <tr>
+                        <th>Prestamos</th>
+                        <th>Promociones</th>
+                        <th>Buho Bank</th>
+                        <th>Plan Sueldo</th>
+                        <th>Pyme</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Calcula la cuota de tu prestamo</td>
+                        <td>Conocé y disfrutá de los beneficios de comprar con Búho Crédito y Búho Débito</td>
+                        <td>Pedí ahora tu Tarjeta de Crédito on line</td>
+                        <td>Beneficios exclusivos por acreditar tu sueldo</td>
+                        <td>Productos y servicios para todo el país</td>
+                    </tr>
+                    <tr>
+                        <td>Conocé y disfrutá de los beneficios de comprar con Búho Crédito y Búho Débito</td>
+                        <td>Pedí ahora tu Tarjeta de Crédito on line</td>
+                        <td colspan="2">Beneficios exclusivos por acreditar tu sueldo</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="bancaPersonal">
+            <h2>BANCA PERSONAL</h2>
+            <h3>PROCREAR SOLUCIÓN PARA CASA PROPIA</h4>
+            <p>Comprá o construí tu Casa con el Crédito Hipotecarios dirigido a personas que resultan beneficiadas en el marco del Programa PROCREAR Solución Casa Propia. Esta línea de crédito combina un subsidio de capital no reembolsable, otorgado por el Estado Nacional, junto al ahorro de las familias y la financiación otorgada por el Banco, con el fin de facilitar el acceso a la vivienda en un esquema de cooperación entre el Estado y los bancos.</p>
+        </section>
+    </main>
+    <footer>
+        <p>Código de Prácticas Bancarias | Defensa del Consumidor | Términos y Condiciones | Protección de Datos Personales</p>
+    </footer>
+</body>
+</html>
